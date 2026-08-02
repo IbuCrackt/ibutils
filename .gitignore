@@ -1,0 +1,5 @@
+__pycache__/
+*.pyc
+testDataset/
+*.json
+*.ruff_cache
