@@ -1,0 +1,14 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+
+[project]
+name = "ibutils"
+version = "0.0.1"
+authors = [
+  { name="Jonas Thein", email="theinj@gmx.de" },
+]
+description = "just ibu's personal util-package"
+readme = "README.md"
+requires-python = ">=3.10"
