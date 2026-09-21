@@ -4,6 +4,4 @@ testDataset/
 *.json
 *.ruff_cache
 
-.gitignore
-id_ed25519
-id_ed25519.pub
+help.md
