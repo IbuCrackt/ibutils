@@ -4,13 +4,14 @@ from PyQt6.QtCore import QTimer
 import sys
 from enum import Enum, auto
 
-from utils.gui import LoadBar
+from ibutils.gui import LoadBar
 
 class Command(Enum):
     SET = auto()
     ADD = auto()
     TITLE = auto()
     MAX_VALUE = auto()
+    ETA = auto()
     CLOSE = auto()
 
 
@@ -40,6 +41,9 @@ def run(conn):
 
                 case Command.MAX_VALUE:
                     window.set_maximum(value)
+
+                case Command.ETA:
+                    window.set_eta(value)
 
                 case Command.CLOSE:
                     window.close()
